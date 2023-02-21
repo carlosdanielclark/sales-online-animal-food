@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--ADJUNTAR HOJA DE ESTILO-->
+
+    <link rel="stylesheet" type="text/css" href="source/css/style.css" />
+    <title>Encargo</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--SECCION DE CABECERA-->
+      <header class="hea">
+
+        <!--SECCION NEVEGACION-->
+        <div class="menu_dropdown">
+          <p>MENU</p>
+          <nav class="menu">
+            <li onclick="location.href='Inicio.html'">Inicio</li>
+            <li onclick="location.href='mision_vision.html'">
+              Misión y Visión
+            </li>
+            <li onclick="location.href='produc_serv.html'">
+              Productos y Servicios
+            </li>
+            <li onclick="location.href='encargo.html'">Encargo</li>
+          </nav>
+        </div>
+
+        <!--SECCION DEL TITULO DE LA PAGINA-->
+        <div class="img_h1_enc">
+          <h1 class="H1">Has tu pedido!</h1>
+        </div>
+
+                <!--LOGO-->
+                <div class="logo">
+                  <div class="logo_3">
+                    <div class="circle_1_3"></div>
+                    <div class="circle_2_3"></div>
+                    <div class="circle_3_3"></div>
+                    <div class="circle_1_4"></div>
+                    <div class="circle_2_4"></div>
+                    <div class="circle_3_4"></div>
+                  <div class="text">
+                    <p>Piensos Clark</p>
+                    <span>Producción y Comercialización de Pienso Criollo</span>
+                  </div>
+                </div>
+      </header>
+
+      <!--SECCION DE SECCION-->
+      <section class="encargo">
+        <section class="sec">
+          <!--FORMULARIO-->
+          <div class="sec_form">
+            <form id="formHTML">
+              <header class="form_header">
+                <span>Llene los sigientes campos para realizar su pedido.</span>
+              </header>
+
+              <label for="NameClient" class="form_label"
+                >Nombre y Apellidos:</label
+              >
+              <input
+                class="form_imput validate"
+                name="NameClient"
+                id="NameClient"
+                type="text"
+                placeholder="Full Name"
+                maxlength="30"
+              />
+
+              <label for="IdentificationID" class="form_label">CI:</label>
+              <input
+                class="form_imput"
+                name="IdentificationID"
+                id="IdentificationID"
+                type="number"
+                placeholder="Personal Identification"
+                maxlength="11"
+              />
+
+              <label class="form_label">Teléfono:</label>
+              <input
+                class="form_imput"
+                name="Phone"
+                id="Phone"
+                type="number"
+                placeholder="Phone Number"
+                maxlength="11"
+              />
+
+              <label for="email" class="form_label">Email:</label>
+              <input
+                class="form_imput"
+                name="email"
+                id="email"
+                type="email"
+                maxlength="34"
+                placeholder="Email"
+              />
+
+              <div class="form_categoria">
+                <label class="form_label">Categoria:</label><br>
+                <span>Persona Natural</span>
+                <input
+                  type="checkbox"
+                  name="Categoria"
+                  value="Natural"
+                />
+                <span>Persona Jurídica</span>
+                <input
+                  type="checkbox"
+                  name="Categoria"
+                  value="Jurídica"
+                />
+              </div>
+
+              <label for="Producto" class="form_label"
+                >Selecione su producto:</label
+              >
+              <select class="form_select" name="Producto" size="1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="Concentrado Energético">
+                  Concentrado Energético
+                </option>
+                <option value="Concentrado Protéico">
+                  Concentrado Protéico
+                </option>
+                <option value="Pienso de Incio">Pienso de Incio</option>
+                <option value="Pienso de Ceba">Pienso de Ceba</option>
+                <option value="Pienso de Integral">Pienso de Integral</option>
+                <option value="Harina de Titonia">Harina de Titonia</option>
+                <option value="Harina de Boniato">Harina de Boniato</option>
+                <option value="Harina de Yuca">Harina de Yuca</option>
+                <option value="Harina de Plátano B.">
+                  Harina de Plátano B.
+                </option>
+              </select>
+
+              <label for="Unidad_de_medida" class="form_label"
+                >Unidad de medida:</label
+              >
+              <select class="form_select" name="Unidad_de_medida" size="1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="libra">Libra</option>
+                <option value="tonelada">Tonelada</option>
+                <option value="kilogramo">Kilogramo</option>
+                <option value="lata">Lata</option>
+                <option value="saco">Saco</option>
+              </select>
+
+              <label for="Cantidad" class="form_label">Cantidad:</label><br />
+              <input
+                class="form_imput"
+                type="text"
+                name="Cantidad"
+                maxlength="3"
+                placeholder="#"
+              /><br />
+
+              <button class="btn form_btn" type="submit" name="action">
+                Add
+              </button>
+              <button class="btn form_btn" type="reset" value="delete">
+                Delete
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!--REGISTRO DEL PEDIDO-->
+        <div class="sec_register">
+          <div class="register_conten">
+            <h2>Registro del pedido:</h2>
+            <div class="card_encargo row-11">
+              <div class="data-0">
+                <img src="img/uncknow-1185656059-170x170.jpg" class="img" />
+              </div>
+              <div class="data-1">
+                <p>Name:</p>
+                <p>ID:</p>
+                <p>Category:</p>
+                <p>Phone:</p>
+                <p>e-mail:</p>
+              </div>
+              <div class="data-2">
+                <div id="data-client">
+                  <p class="sheet">-empty-</p>
+                  <p class="sheet">-empty-</p>
+                  <p class="sheet">-empty-</p>
+                  <p class="sheet">-empty-</p>
+                  <p class="sheet">-empty-</p>
+                </div>
+              </div>
+              <div class="data-3">
+                <h3>Productos solocitados:</h3>
+                <div id="data_producto">
+                  <p class="sheet">-empty-</p>
+              </div>
+              <div class="data-4">
+                <button class="card-btn-send">Enviar pedido</button>
+                <button class="card-btn-cancel">Cancelar pedido</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!--SECCION PIE DE PAGINA-->
+      <footer class="foo">
+        <p>venomball3@gmail.com</p>
+      </footer>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="source/js/materialize.min.js"></script>
+    <!--ADJUNTAR HOJA DE SCRIPT-->
+    <script src="source/js/scrpit.js"></script>
+  </body>
+</html>
